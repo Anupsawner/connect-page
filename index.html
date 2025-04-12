@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect With Me</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      text-align: center;
+      padding: 50px 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      color: #333;
+      font-size: 2.5rem;
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .helper-message {
+      font-size: 1rem;
+      margin-bottom: 30px;
+      color: #555;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .icon:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #28a745;
+      color: white;
+      padding: 15px 30px;
+      margin: 15px auto;
+      border: none;
+      border-radius: 12px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #218838;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Connect With Me</h1>
+  <div class="helper-message">Click the icons to open my social links. Just hit Follow/Subscribe on each one!</div>
+
+  <div class="icons">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" class="icon" onclick="window.open('https://youtube.com/@sam_wedding789?si=yBf6aprfLVuish1R')" alt="YouTube" />
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" class="icon" onclick="window.open('https://t.me/+LgCTAnDWReJlYTc1')" alt="Telegram" />
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="icon" onclick="window.open('https://www.instagram.com/samwedding789?igsh=ZzI1eGN6bm45YTIw')" alt="Instagram" />
+    <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" class="icon" onclick="window.open('https://www.facebook.com/share/1DFiEfDM2Z/')" alt="Facebook" />
+  </div>
+
+  <br />
+
+  <a href="https://wa.me/919589208985?text=Thanks%20for%20connecting%20with%20me!" target="_blank">
+    <button class="whatsapp-button">Send WhatsApp Message</button>
+  </a>
+</body>
+</html>
